@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button.remove-btn {
+    background-color: #FF4136;
+    margin-top: 5px;
+    width: auto;
+    padding: 5px 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+.add-btn {
+    background-color: #2ECC40;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#timetable-output {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#timetable-output a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+#timetable-output a:hover {
+    text-decoration: underline;
+}

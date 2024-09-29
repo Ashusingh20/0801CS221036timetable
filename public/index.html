@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timetable Generator</h1>
+        <form id="timetable-form">
+            <div id="subjects">
+                <h2>Subjects</h2>
+                <div class="subject">
+                    <input type="text" name="subject" placeholder="Subject Name" required>
+                    <input type="text" name="teacher" placeholder="Teacher Name" required>
+                    <input type="number" name="duration" placeholder="Duration (mins)" required min="30" max="180">
+                    <input type="number" name="frequency" placeholder="Frequency per week" required min="1" max="5">
+                    <input type="text" name="room" placeholder="Room Number" required>
+                    <button type="button" class="remove-btn" onclick="removeSubject(this)">Remove</button>
+                </div>
+            </div>
+            <button type="button" class="add-btn" onclick="addSubject()">Add Another Subject</button>
+
+            <div id="labs">
+                <h2>Labs</h2>
+                <div class="lab">
+                    <input type="text" name="lab" placeholder="Lab Name" required>
+                    <input type="text" name="labTeacher" placeholder="Lab Teacher" required>
+                    <input type="number" name="labDuration" placeholder="Duration (mins)" required min="30" max="180">
+                    <input type="text" name="labBatch" placeholder="Batch (A/B)" required>
+                    <input type="text" name="labRoom" placeholder="Room Number" required>
+                    <button type="button" class="remove-btn" onclick="removeLab(this)">Remove</button>
+                </div>
+            </div>
+            <button type="button" class="add-btn" onclick="addLab()">Add Another Lab</button>
+
+            <button type="submit" class="submit-btn">Generate Timetable</button>
+        </form>
+        <div id="timetable-output"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
